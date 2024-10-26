@@ -1,4 +1,3 @@
-
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
@@ -26,10 +25,10 @@ export const MenuItem = ({
     children?: React.ReactNode;
 }) => {
     return (
-        <div onMouseEnter={() => setActive(item)} className="relative ">
+        <div onMouseEnter={() => setActive(item)} className="relative">
             <motion.p
                 transition={{ duration: 0.3 }}
-                className="cursor-pointer text-black hover:text-cyan-400 dark:text-white"
+                className="cursor-pointer text-black hover:text-cyan-500"
             >
                 {item}
             </motion.p>
@@ -43,11 +42,11 @@ export const MenuItem = ({
                         <div className="absolute top-[calc(100%_+_1.2rem)] left-1/2 transform -translate-x-1/2 pt-4">
                             <motion.div
                                 transition={transition}
-                                layoutId="active" // layoutId ensures smooth animation
-                                className="bg-white dark:bg-black backdrop-blur-sm rounded-2xl overflow-hidden border border-black/[0.2] dark:border-white/[0.2] shadow-xl"
+                                layoutId="active"
+                                className="bg-white border border-gray-300 rounded-2xl overflow-hidden shadow-xl"
                             >
                                 <motion.div
-                                    layout // layout ensures smooth animation
+                                    layout
                                     className="w-max h-full p-4"
                                 >
                                     {children}
@@ -71,7 +70,7 @@ export const Menu = ({
     return (
         <nav
             onMouseLeave={() => setActive(null)} // resets the state
-            className="relative rounded-full border border-transparent dark:bg-black dark:border-white/[0.2] bg-white shadow-input flex justify-center space-x-4 px-8 py-6 "
+            className="fixed top-0 left-0 w-full z-10 rounded-b-lg border border-gray-300 bg-white shadow-md flex justify-center space-x-4 px-8 py-6" // Full width with fixed positioning
         >
             {children}
         </nav>
@@ -90,19 +89,19 @@ export const ProductItem = ({
     src: string;
 }) => {
     return (
-        <Link href={href} className="flex space-x-2">
+        <Link href={href} className="flex space-x-2 items-center">
             <Image
                 src={src}
                 width={140}
                 height={70}
                 alt={title}
-                className="flex-shrink-0 rounded-md shadow-2xl"
+                className="flex-shrink-0 rounded-md shadow-lg"
             />
             <div>
-                <h4 className="text-xl font-bold mb-1 text-black dark:text-white">
+                <h4 className="text-xl font-bold mb-1 text-black">
                     {title}
                 </h4>
-                <p className="text-neutral-700 text-sm max-w-[10rem] dark:text-neutral-300">
+                <p className="text-neutral-700 text-sm max-w-[10rem]">
                     {description}
                 </p>
             </div>
@@ -114,7 +113,7 @@ export const HoveredLink = ({ children, ...rest }: any) => {
     return (
         <Link
             {...rest}
-            className="text-neutral-700 dark:text-neutral-200 hover:text-cyan-400 "
+            className="text-neutral-700 hover:text-cyan-500"
         >
             {children}
         </Link>
