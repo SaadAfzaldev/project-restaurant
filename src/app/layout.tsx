@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import {Jost} from "next/font/google"
 import "./globals.css";
+import { NavbarDemo } from "./components/Navbar.";
 
 
 
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body
         className={jost.className}
       >
+        <NavbarDemo/>
         {children}
       </body>
     </html>
