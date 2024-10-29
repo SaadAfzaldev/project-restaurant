@@ -63,16 +63,21 @@ export const MenuItem = ({
 export const Menu = ({
                          setActive,
                          children,
+                         name
                      }: {
     setActive: (item: string | null) => void;
     children: React.ReactNode;
+    name : string
 }) => {
     return (
         <nav
             onMouseLeave={() => setActive(null)} // resets the state
-            className="fixed top-0 left-0 w-full z-10 rounded-b-lg border border-gray-300 bg-white shadow-md flex justify-center space-x-4 px-8 py-6" // Full width with fixed positioning
+            className="fixed top-0 left-0 w-full z-10 rounded-b-lg border border-gray-300 bg-white shadow-md flex justify-between items-center px-8 py-6" // Adjusted for spacing
         >
-            {children}
+            <div className="text-lg font-bold text-black">{name}</div> {/* Name on the left */}
+            <div className="flex space-x-6"> {/* Menu items on the right */}
+                {children}
+            </div>
         </nav>
     );
 };

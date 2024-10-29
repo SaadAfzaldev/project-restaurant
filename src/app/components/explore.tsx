@@ -1,7 +1,7 @@
 import React from 'react'
 import { CardBody,CardContainer,CardItem } from './3dcard';
 import Image from "next/image";
-import Link from "next/link";
+
 export default function Explore() {
   return (
     <>
