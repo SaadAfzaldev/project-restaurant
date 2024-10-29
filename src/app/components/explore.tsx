@@ -12,12 +12,12 @@ export default function Explore() {
             <p className='mt-10'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium aperiam quis optio id, fuga molestias impedit eveniet qui reprehenderit eius est repudiandae nisi expedita quam possimus architecto ipsam hic quibusdam.
             </p>
-            <div className='flex flex-col md:flex-row md:flex-wrap md:gap-5 '>
-                <CardContainer className="inter-var ">
-                    <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+            <div className='flex flex-col md:flex-row md:flex-wrap md:gap-6'>
+                <CardContainer className="inter-var w-screen sm:w-[30rem] p-1">
+                    <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border flex justify-ec">
                     <CardItem
                         translateZ="50"
-                    className="text-xl font-bold text-neutral-600 dark:text-white"
+                    className="text-xl font-bold text-neutral-600 dark:text-white items-center pt-20"
                     >
                         Grilled Mackerel Steak
                     </CardItem>
@@ -32,11 +32,11 @@ export default function Explore() {
                     </CardItem>
                 </CardBody>
                 </CardContainer>
-                <CardContainer className="inter-var">
-                    <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+                <CardContainer className="inter-var w-screen sm:w-[30rem] p-1">
+                    <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border flex">
                         <CardItem
                             translateZ="50"
-                        className="text-xl font-bold text-neutral-600 dark:text-white"
+                        className="text-xl font-bold text-neutral-600 dark:text-white pt-20"
                         >
                             Spaghetti with Grilled Mackerel
                         </CardItem>
@@ -54,12 +54,11 @@ export default function Explore() {
                 
             </div>
             <div className='flex flex-col md:flex-row md:flex-wrap md:gap-5 '>
-                
-                <CardContainer className="inter-var">
-                    <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+                <CardContainer className="inter-var w-screen sm:w-[30rem] p-1">
+                    <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border flex">
                         <CardItem
                             translateZ="50"
-                        className="text-xl font-bold text-neutral-600 dark:text-white"
+                        className="text-xl font-bold text-neutral-600 dark:text-white pt-20"
                         >
                             Chicken in Teriyaki Sauce
                         </CardItem>
@@ -74,11 +73,11 @@ export default function Explore() {
                         </CardItem>
                     </CardBody>
                 </CardContainer>
-                <CardContainer className="inter-var">
-                    <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+                <CardContainer className="inter-var w-screen sm:w-[30rem] p-1">
+                    <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border flex">
                         <CardItem
                             translateZ="50"
-                        className="text-xl font-bold text-neutral-600 dark:text-white"
+                        className="text-xl font-bold text-neutral-600 dark:text-white pt-20"
                         >
                             Chicken Nuggets with Potato
                         </CardItem>
